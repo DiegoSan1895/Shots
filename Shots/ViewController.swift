@@ -17,8 +17,6 @@ class ViewController: UIViewController {
     var safariViewController: SFSafariViewController?
     var tableView: UITableView?
     
-    var shots: [DribbbleShot]?
-    
     @IBAction func signWithDribbble(sender: UIButton) {
         let url = NSURL()
         
@@ -45,7 +43,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let string = "dfhdf"
     }
 }
 
