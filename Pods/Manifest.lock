@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (3.2.0)
+  - AsyncSwift (1.7.2)
+  - DateTools (1.7.0)
+  - Kingfisher (2.0.3)
+  - OLImageView (1.5.1):
+    - OLImageView/Core (= 1.5.1)
+  - OLImageView/Core (1.5.1)
+  - SnapKit (0.19.1)
+  - SVProgressHUD (1.1.3)
+  - SwiftyUserDefaults (2.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AsyncSwift
+  - DateTools
+  - Kingfisher
+  - OLImageView
+  - SnapKit
+  - SVProgressHUD
+  - SwiftyUserDefaults
+
+SPEC CHECKSUMS:
+  Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
+  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
+  DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
+  Kingfisher: 44c1f1912f19371a67d701e67c96d6bb45ca1c8d
+  OLImageView: e03cd533ce6b1a155acb9f708ab9b2e71ea070d5
+  SnapKit: eff58d6e3451bf2f482db2eccf86aecf371dc62d
+  SVProgressHUD: 748080e4f36e603f6c02aec292664239df5279c1
+  SwiftyUserDefaults: 1266e9734c68bcfbac8294ee84173dc8ba6db312
+
+COCOAPODS: 0.39.0

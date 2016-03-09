@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="334" id="KGk-i7-Jjw" customClass="ShotsCell" customModule="Shots" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="334"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="333.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Van-N1-hee" userLabel="ShotImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="268"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="268" id="5Oa-BB-PsD"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jkh-gU-wOT" userLabel="ShotDetailFooter">
+                        <rect key="frame" x="0.0" y="268" width="390" height="55"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NxI-b9-4Iy" userLabel="LikeButton">
+                                <rect key="frame" x="0.0" y="7" width="50" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Guk-4J-wqR"/>
+                                    <constraint firstAttribute="width" constant="50" id="YuO-aK-zhA"/>
+                                </constraints>
+                                <state key="normal" image="like"/>
+                                <connections>
+                                    <action selector="likeButtonDidPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="O3S-IY-Ovx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7F-pQ-C2d" userLabel="Shot Description Label">
+                                <rect key="frame" x="289" y="9" width="33" height="16"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fko-6z-ztE" userLabel="Avator Image View">
+                                <rect key="frame" x="337" y="9" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="8oh-b8-Sxz"/>
+                                    <constraint firstAttribute="width" secondItem="fko-6z-ztE" secondAttribute="height" multiplier="37:23" id="Izh-in-Ce5"/>
+                                    <constraint firstAttribute="height" constant="38" id="PqI-7k-CzZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Izh-in-Ce5"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6O-y3-qHZ" userLabel="Shot Time Label">
+                                <rect key="frame" x="295" y="29" width="27" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ut8-cP-MUH" userLabel="Author Label">
+                                <rect key="frame" x="263" y="29" width="27" height="15.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J6O-y3-qHZ" firstAttribute="leading" secondItem="Ut8-cP-MUH" secondAttribute="trailing" constant="5" id="2Lh-0I-Pc1"/>
+                            <constraint firstItem="J6O-y3-qHZ" firstAttribute="trailing" secondItem="y7F-pQ-C2d" secondAttribute="trailing" id="3Z7-cF-0QO"/>
+                            <constraint firstItem="y7F-pQ-C2d" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NxI-b9-4Iy" secondAttribute="trailing" constant="20" id="Dav-IL-t7C"/>
+                            <constraint firstAttribute="trailing" secondItem="fko-6z-ztE" secondAttribute="trailing" constant="15" id="G17-aT-ZHs"/>
+                            <constraint firstItem="fko-6z-ztE" firstAttribute="centerY" secondItem="jkh-gU-wOT" secondAttribute="centerY" id="GIe-hS-oAn"/>
+                            <constraint firstItem="NxI-b9-4Iy" firstAttribute="leading" secondItem="jkh-gU-wOT" secondAttribute="leading" id="GWM-ey-jbn"/>
+                            <constraint firstAttribute="height" constant="55" id="Gza-Mh-0qE"/>
+                            <constraint firstItem="NxI-b9-4Iy" firstAttribute="centerY" secondItem="jkh-gU-wOT" secondAttribute="centerY" id="Prt-5b-gQc"/>
+                            <constraint firstItem="fko-6z-ztE" firstAttribute="leading" secondItem="y7F-pQ-C2d" secondAttribute="trailing" constant="15" id="RRz-i3-J69"/>
+                            <constraint firstItem="Ut8-cP-MUH" firstAttribute="centerY" secondItem="J6O-y3-qHZ" secondAttribute="centerY" id="TX2-BG-mki"/>
+                            <constraint firstItem="J6O-y3-qHZ" firstAttribute="top" secondItem="y7F-pQ-C2d" secondAttribute="bottom" constant="2" id="xKq-hF-kZQ"/>
+                            <constraint firstItem="y7F-pQ-C2d" firstAttribute="top" secondItem="fko-6z-ztE" secondAttribute="top" id="y4N-lv-IdV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jkh-gU-wOT" firstAttribute="top" secondItem="Van-N1-hee" secondAttribute="bottom" id="EAF-KR-KsL"/>
+                    <constraint firstAttribute="trailing" secondItem="jkh-gU-wOT" secondAttribute="trailing" id="JwK-ks-Fg6"/>
+                    <constraint firstItem="Van-N1-hee" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="au3-HQ-8uZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Van-N1-hee" secondAttribute="trailing" id="fKD-xS-KYY"/>
+                    <constraint firstItem="jkh-gU-wOT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oaW-Ht-lNZ"/>
+                    <constraint firstItem="Van-N1-hee" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ohY-Qu-uRw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatorImageView" destination="fko-6z-ztE" id="FEd-5b-A0b"/>
+                <outlet property="likeButton" destination="NxI-b9-4Iy" id="3Ex-tn-m58"/>
+                <outlet property="shotAuthorLabel" destination="Ut8-cP-MUH" id="Gty-rN-h8f"/>
+                <outlet property="shotDescriptionLabel" destination="y7F-pQ-C2d" id="VAI-Eh-Fnw"/>
+                <outlet property="shotDetailFooterView" destination="jkh-gU-wOT" id="W5R-V3-1dI"/>
+                <outlet property="shotImageView" destination="Van-N1-hee" id="jLu-ff-T5F"/>
+                <outlet property="shotTimeLabel" destination="J6O-y3-qHZ" id="dR6-kx-F2k"/>
+            </connections>
+            <point key="canvasLocation" x="432" y="683"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like" width="19" height="17"/>
+    </resources>
+</document>
