@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD2628CD1C9EDC8D00B8F8AC /* DribbbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2628CC1C9EDC8D00B8F8AC /* DribbbleModel.swift */; };
+		BD2628D01C9EE81600B8F8AC /* ShotDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2628CF1C9EE81600B8F8AC /* ShotDataSourceAndDelegate.swift */; };
+		BD2628D21C9EE8FA00B8F8AC /* UIColor+Shots.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2628D11C9EE8FA00B8F8AC /* UIColor+Shots.swift */; };
+		BD2628D51C9EEDB900B8F8AC /* ShotsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2628D41C9EEDB900B8F8AC /* ShotsLayout.swift */; };
+		BD2628D71C9EF07B00B8F8AC /* DribbbleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD2628D61C9EF07B00B8F8AC /* DribbbleService.swift */; };
 		BDDA1EE51C76A98000D66252 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA1EE41C76A98000D66252 /* AppDelegate.swift */; };
 		BDDA1EE71C76A98000D66252 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA1EE61C76A98000D66252 /* ViewController.swift */; };
 		BDDA1EEA1C76A98000D66252 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDA1EE81C76A98000D66252 /* Main.storyboard */; };
@@ -15,10 +20,8 @@
 		BDDA1EFD1C76A98000D66252 /* ShotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA1EFC1C76A98000D66252 /* ShotsTests.swift */; };
 		BDDA1F081C76A98000D66252 /* ShotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA1F071C76A98000D66252 /* ShotsUITests.swift */; };
 		BDDA1F161C76AB7E00D66252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDA1F151C76AB7E00D66252 /* Assets.xcassets */; };
-		BDDA1F181C76B0E400D66252 /* DribbbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA1F171C76B0E400D66252 /* DribbbleViewController.swift */; };
 		BDDA1F1B1C76B15400D66252 /* ShotsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA1F191C76B15400D66252 /* ShotsCell.swift */; };
 		BDDA1F1C1C76B15400D66252 /* ShotsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDDA1F1A1C76B15400D66252 /* ShotsCell.xib */; };
-		BDDA1F1E1C76BAB600D66252 /* TableViewDataSourceAndDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDA1F1D1C76BAB600D66252 /* TableViewDataSourceAndDelegate.swift */; };
 		F831FD34E3F493246351D200 /* Pods_Shots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5525866AD72D38EBA044F1BA /* Pods_Shots.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +46,12 @@
 		4677A4526AD87A10B2BFB406 /* Pods-Shots.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shots.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shots/Pods-Shots.release.xcconfig"; sourceTree = "<group>"; };
 		5525866AD72D38EBA044F1BA /* Pods_Shots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C0939C7561188654FB04DC0 /* Pods-Shots.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shots.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shots/Pods-Shots.debug.xcconfig"; sourceTree = "<group>"; };
+		BD2628CC1C9EDC8D00B8F8AC /* DribbbleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleModel.swift; sourceTree = "<group>"; };
+		BD2628CE1C9EE14A00B8F8AC /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		BD2628CF1C9EE81600B8F8AC /* ShotDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotDataSourceAndDelegate.swift; sourceTree = "<group>"; };
+		BD2628D11C9EE8FA00B8F8AC /* UIColor+Shots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Shots.swift"; sourceTree = "<group>"; };
+		BD2628D41C9EEDB900B8F8AC /* ShotsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotsLayout.swift; sourceTree = "<group>"; };
+		BD2628D61C9EF07B00B8F8AC /* DribbbleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleService.swift; sourceTree = "<group>"; };
 		BDDA1EE11C76A98000D66252 /* Shots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shots.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDA1EE41C76A98000D66252 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDA1EE61C76A98000D66252 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,10 +66,8 @@
 		BDDA1F071C76A98000D66252 /* ShotsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShotsUITests.swift; sourceTree = "<group>"; };
 		BDDA1F091C76A98000D66252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDDA1F151C76AB7E00D66252 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		BDDA1F171C76B0E400D66252 /* DribbbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleViewController.swift; sourceTree = "<group>"; };
 		BDDA1F191C76B15400D66252 /* ShotsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShotsCell.swift; sourceTree = "<group>"; };
 		BDDA1F1A1C76B15400D66252 /* ShotsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShotsCell.xib; sourceTree = "<group>"; };
-		BDDA1F1D1C76BAB600D66252 /* TableViewDataSourceAndDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceAndDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD2628D31C9EE99500B8F8AC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				BD2628D11C9EE8FA00B8F8AC /* UIColor+Shots.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		BD3488F31C90137000B43809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDDA1F191C76B15400D66252 /* ShotsCell.swift */,
+				BDDA1F1A1C76B15400D66252 /* ShotsCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BD3488F41C90139400B43809 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDDA1EE61C76A98000D66252 /* ViewController.swift */,
+				BD2628CF1C9EE81600B8F8AC /* ShotDataSourceAndDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		BDDA1ED81C76A98000D66252 = {
 			isa = PBXGroup;
 			children = (
@@ -123,12 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				BDDA1EE41C76A98000D66252 /* AppDelegate.swift */,
-				BDDA1EE61C76A98000D66252 /* ViewController.swift */,
-				BDDA1F1D1C76BAB600D66252 /* TableViewDataSourceAndDelegate.swift */,
-				BDDA1F191C76B15400D66252 /* ShotsCell.swift */,
-				BDDA1F1A1C76B15400D66252 /* ShotsCell.xib */,
-				BDDA1F171C76B0E400D66252 /* DribbbleViewController.swift */,
+				BD3488F41C90139400B43809 /* Controller */,
+				BD3488F31C90137000B43809 /* View */,
 				BDDA1EE81C76A98000D66252 /* Main.storyboard */,
+				BD2628CC1C9EDC8D00B8F8AC /* DribbbleModel.swift */,
+				BD2628D61C9EF07B00B8F8AC /* DribbbleService.swift */,
+				BD2628D41C9EEDB900B8F8AC /* ShotsLayout.swift */,
+				BD2628D31C9EE99500B8F8AC /* Helper */,
+				BD2628CE1C9EE14A00B8F8AC /* MyPlayground.playground */,
 				BDDA1F151C76AB7E00D66252 /* Assets.xcassets */,
 				BDDA1EF01C76A98000D66252 /* LaunchScreen.storyboard */,
 				BDDA1EF31C76A98000D66252 /* Info.plist */,
@@ -355,12 +390,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDDA1F181C76B0E400D66252 /* DribbbleViewController.swift in Sources */,
+				BD2628D01C9EE81600B8F8AC /* ShotDataSourceAndDelegate.swift in Sources */,
 				BDDA1EE71C76A98000D66252 /* ViewController.swift in Sources */,
 				BDDA1EE51C76A98000D66252 /* AppDelegate.swift in Sources */,
+				BD2628D51C9EEDB900B8F8AC /* ShotsLayout.swift in Sources */,
 				BDDA1EED1C76A98000D66252 /* Shots.xcdatamodeld in Sources */,
+				BD2628CD1C9EDC8D00B8F8AC /* DribbbleModel.swift in Sources */,
 				BDDA1F1B1C76B15400D66252 /* ShotsCell.swift in Sources */,
-				BDDA1F1E1C76BAB600D66252 /* TableViewDataSourceAndDelegate.swift in Sources */,
+				BD2628D71C9EF07B00B8F8AC /* DribbbleService.swift in Sources */,
+				BD2628D21C9EE8FA00B8F8AC /* UIColor+Shots.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Shots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DiegoSan.Shots;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Shots/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DiegoSan.Shots;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9B8530A00FBD27BBC0F014B2'
+               BlueprintIdentifier = '00408E173A802895C3507FFB'
                BlueprintName = 'OLImageView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'OLImageView.framework'>

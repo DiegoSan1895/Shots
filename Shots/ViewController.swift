@@ -10,17 +10,21 @@ import UIKit
 import SafariServices
 
 class ViewController: UIViewController {
+    
+    // MARK: - IBOutlets and Properties
+    
     @IBOutlet weak var appLogo: UIImageView!
     @IBOutlet weak var signInWithDribbbleButton: UIButton!
     @IBOutlet weak var footerMessageLabel: UILabel!
     
     var safariViewController: SFSafariViewController?
-    var tableView: UITableView?
+    var collectionView: UICollectionView?
+    var shotsLayout = ShotsLayout()
     
     @IBAction func signWithDribbble(sender: UIButton) {
-        let url = NSURL()
+        let URL = "\(DribbbleOauthURL)?client_id=\(DribbbleClientID)&redirect_uri=\(callbackURL)&scope=public+comment+write"
         
-        safariViewController = SFSafariViewController(URL: url)
+        safariViewController = SFSafariViewController(URL: NSURL(string: URL)!)
         presentViewController(safariViewController!, animated: true, completion: nil)
         
     }
@@ -29,20 +33,36 @@ class ViewController: UIViewController {
         self.appLogo.hidden = true
         self.signInWithDribbbleButton.hidden = true
         self.footerMessageLabel.hidden = true
-        self.tableView?.hidden = false
+        self.collectionView?.hidden = false
+        
+        collectionView = UICollectionView(frame: view.frame, collectionViewLayout: ShotsLayout())
+        collectionView?.backgroundColor = UIColor.clearColor()
+        view.addSubview(collectionView!)
     }
     
     func becomeSignWithDribbble(){
         self.appLogo.hidden = false
         self.signInWithDribbbleButton.hidden = false
         self.footerMessageLabel.hidden = false
-        self.tableView?.hidden = true
+        self.collectionView?.hidden = true
     }
     
-    // MARK: - view cycle
+    // MARK: - LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        becomeSignWithDribbble()
+        safariViewController?.delegate = self
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 }
 
+extension ViewController: SFSafariViewControllerDelegate{
+    func safariViewControllerDidFinish(controller: SFSafariViewController) {
+        print("finish")
+    }
+}
