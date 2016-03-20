@@ -97,6 +97,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD3488F31C90137000B43809 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BDDA1F191C76B15400D66252 /* ShotsCell.swift */,
+				BDDA1F1A1C76B15400D66252 /* ShotsCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BD3488F41C90139400B43809 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BDDA1EE61C76A98000D66252 /* ViewController.swift */,
+				BDDA1F1D1C76BAB600D66252 /* TableViewDataSourceAndDelegate.swift */,
+				BDDA1F171C76B0E400D66252 /* DribbbleViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		BDDA1ED81C76A98000D66252 = {
 			isa = PBXGroup;
 			children = (
@@ -123,11 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				BDDA1EE41C76A98000D66252 /* AppDelegate.swift */,
-				BDDA1EE61C76A98000D66252 /* ViewController.swift */,
-				BDDA1F1D1C76BAB600D66252 /* TableViewDataSourceAndDelegate.swift */,
-				BDDA1F191C76B15400D66252 /* ShotsCell.swift */,
-				BDDA1F1A1C76B15400D66252 /* ShotsCell.xib */,
-				BDDA1F171C76B0E400D66252 /* DribbbleViewController.swift */,
+				BD3488F41C90139400B43809 /* Controller */,
+				BD3488F31C90137000B43809 /* View */,
 				BDDA1EE81C76A98000D66252 /* Main.storyboard */,
 				BDDA1F151C76AB7E00D66252 /* Assets.xcassets */,
 				BDDA1EF01C76A98000D66252 /* LaunchScreen.storyboard */,

@@ -22,13 +22,5 @@ class ShotsCell: UITableViewCell {
     @IBAction func likeButtonDidPressed(sender: UIButton) {
     }
     
-    var shot: DribbbleShot?{
-        didSet{
-            if let normalImage = shot?.images["normal"] as? String{
-                shotImageView.kf_setImageWithURL(NSURL(string: normalImage)!, placeholderImage: nil, optionsInfo: [KingfisherOptionsInfoItem.BackgroundDecode])
-            }
-            avatorImageView.kf_setImageWithURL(NSURL(string: (shot?.user.avatar_url)!)!, placeholderImage: nil, optionsInfo: [KingfisherOptionsInfoItem.BackgroundDecode])
-        }
-    }
     
 }
