@@ -9,6 +9,7 @@
 import UIKit
 import SafariServices
 
+let ShotsToTimeLineNotification = "ShotsToTimeLineNotification"
 class ViewController: UIViewController {
     
     // MARK: - IBOutlets and Properties
@@ -20,6 +21,8 @@ class ViewController: UIViewController {
     var safariViewController: SFSafariViewController?
     var collectionView: UICollectionView?
     var shotsLayout = ShotsLayout()
+    
+    var shots = [DribbbleShot]()
     
     @IBAction func signWithDribbble(sender: UIButton) {
         let URL = "\(DribbbleOauthURL)?client_id=\(DribbbleClientID)&redirect_uri=\(callbackURL)&scope=public+comment+write"
@@ -36,7 +39,8 @@ class ViewController: UIViewController {
         self.collectionView?.hidden = false
         
         collectionView = UICollectionView(frame: view.frame, collectionViewLayout: ShotsLayout())
-        collectionView?.backgroundColor = UIColor.clearColor()
+        collectionView?.backgroundColor = UIColor.backgroundColor()
+        collectionView?.delegate = self
         view.addSubview(collectionView!)
     }
     
@@ -54,6 +58,8 @@ class ViewController: UIViewController {
         
         becomeSignWithDribbble()
         safariViewController?.delegate = self
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "becomeTimeLine", name: ShotsToTimeLineNotification, object: nil)
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
